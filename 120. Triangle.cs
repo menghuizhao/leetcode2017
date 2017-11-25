@@ -8,7 +8,7 @@ public class Solution {
         if(triangle.Count == 1){
             return triangle[0][0];
         }
-        //f(n) = f(n -2) + min{ GetElement(n - 1, i) + min(GetElement(n, i), GetElement(n, i + 1))}
+        
         int n = triangle.Count;
         int[] current_row_min = new int[n];
         int[] last_row_min = new int[n];
